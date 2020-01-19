@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Commissions</title>
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>      
+        <header id ="master-header" role="banner">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a class="homelink" href="index.html">
+                        <h1>MyArt</h1>
+                    </a>
+                </div>
+                <div class="main-header">
+                    <ul id="primary-menu">
+                        <li id="home-menu">
+                            <a href="index.html">Home</a>
+                        </li>
+                         <li id="exhibitions-menu">
+                            <button onclick="showExhibitionsSubMenu()" class="exhibitionsdropbtn" a href="index.html">Exhibitions</button>
+                            <div id="exhibitionsDropDown" class="exhibitionssubmenu">
+                                    <a href="solo.html">Solo</a> <br/>
+                                    <a href="group.html">Group</a> <br/>
+                                    <a href="commissions.html">Commissions</a>
+                            </div>
+                        </li>
+                         <li id="about-menu">
+                             <button onclick="showAboutSubMenu()" class="aboutdropbtn" a href="about.html">About</button>
+                            <div id="aboutDropDown" class="aboutsubmenu">
+                                    <a href="about.html">Introduction</a> <br/>
+                                    <a href="author.html">Biography</a>
+                            </div>
+                        </li>
+                         <li id="createAccountMenu">
+                            <a href="account.html">Create Account</a>
+                        </li>
+                         <li id="shop-menu">
+                             <a href="shop.html" id="shopMenu">Shop</a>
+                        </li>
+                   </ul>
+                </div>
+            </div>
+        </header>
+         <div id="itemwrapcommissions">
+          <h1>Commissions</h1>
+         </div>
+        <h2 style="text-align: center;">Commissions</h2>
+        <br/>
+        <div id="currentexhibitions">
+                <p><strong>2015</strong></p>
+                <p>All About Art, 2015, Denver, Colorado</p>
+                <p>Any Whereabouts, 2015, Sante Fe, New Mexico</p>
+                <p>Blue Diamond Pool, 2015, Yucatan, Mexico</p>
+                    <br/>
+                    <br/>
+                <p><strong>2014</strong></p>
+                <p>An Even Three, 2014, Seattle, Washington</p>
+                <p>Proper Point, 2014, Paris, France</p>
+                <p>Trusted Encounter, 2015, London, England</p>
+                    <br/>
+                    <br/>
+        </div>
+        
+        <h2 style="text-align: center;">Commission an Original Piece of Art</h2>
+          <form id="commissionForm">
+              <fieldset>
+                <legend>Request Form</legend>
+                  <div id="commissionID">
+                      <div id="commissionMediumContainer">
+                        <label><b>Desired Medium</b></label>
+                        <input type="text" id="commissionMedium">
+                      </div>
+                        <br/>
+                        <div id="commissionSizeContainer">
+                        <label><b>Desired Size</b></label>
+                        <input type="text" id="commissionSize">
+                        </div>
+                        <br/>
+                        <div id="commissionTimelineContainer">
+                        <label><b>Desired Timeline</b></label>
+                        <input type="text" id="commissionTimeline">
+                        </div>
+                        <br/>
+                        <div id="commissionCommentContainer">
+                        <label><b>Describe Your Request</b></label>
+
+                        <textarea id="commissionComment" rows="4" cols="50" placeholder="A few sentences describing what you'd like. Include artist's examples, a Patone color number, etc."></textarea>
+                        </div>
+                    <p>By clicking "Submit", you agree to the <a href="#">Terms & Conditions</a>.</p>
+                    <button value="Submit" type="submit" class="createbtn" id="createButton" onClick="submitCommission()">Submit</button>
+                    <button type="button"  class="cancelbtn" id="cancelButton" onClick="this.form.reset()">Cancel</button> 
+                  </div>
+              </fieldset>
+          </form>
+        
+        <br/><br/>
+        
+        <table id="commissionsTbl">
+            <tr>
+                <th class="row-datetime">Date Submitted</th> <th class="row-commission">Commissioned</th>
+            </tr>
+        </table>
+        <script src="js/scripts.js"></script>     
+    </body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Solo Exhibitions</title>
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
+        <script src="js/scripts.js"></script>
+    </head>
+    <body>      
+        <header id ="master-header" role="banner">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a class="homelink" href="index.html">
+                        <h1>MyArt</h1>
+                    </a>
+                </div>
+                <div class="main-header">
+                    <ul id="primary-menu">
+                        <li id="home-menu">
+                            <a href="index.html">Home</a>
+                        </li>
+                         <li id="exhibitions-menu">
+                            <button onclick="showExhibitionsSubMenu()" class="exhibitionsdropbtn" a href="index.html">Exhibitions</button>
+                            <div id="exhibitionsDropDown" class="exhibitionssubmenu">
+                                    <a href="solo.html">Solo</a> <br/>
+                                    <a href="group.html">Group</a> <br/>
+                                    <a href="commissions.html">Commissions</a>
+                            </div>
+                        </li>
+                         <li id="about-menu">
+                             <button onclick="showAboutSubMenu()" class="aboutdropbtn" a href="about.html">About</button>
+                            <div id="aboutDropDown" class="aboutsubmenu">
+                                    <a href="about.html">Introduction</a> <br/>
+                                    <a href="author.html">Biography</a>
+                            </div>
+                        </li>
+                         <li id="createAccountMenu">
+                            <a href="account.html">Create Account</a>
+                        </li>
+                         <li id="shop-menu">
+                             <a href="shop.html" id="shopMenu">Shop</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+         <div id="itemwrapsolo">
+          <h1>Solo Exhibitions</h1>
+         </div>
+        <h2 style="text-align: center;">Current Exhibitions</h2>
+        <br/>
+        <div id="currentexhibitions">
+            <img src="images/solo1.jpg" alt="solo exhibitions">
+                <p><strong>DENVER, COLORADO</strong></p>
+                <p>"Exhibition Title"</p>
+                <p>June 1, 2017 to August 16, 2017</p>
+                    <br/>
+                    <br/>
+            <img src="images/solo2.jpg" alt="solo exhibitions">
+                <p><strong>SEATTLE, WASHINGTON</strong></p>
+                <p>"Exhibition Title"</p>
+                <p>May 18, 2017 to July 26, 2017</p>
+        </div>
+        <br/>
+        <br/>
+        <h2 style="text-align: center;">Past Exhibitions</h2>
+            <br/>
+        <div id="pastexhibitions">
+            <img src="images/solo3.jpg" alt="solo exhibitions">
+                <p><strong>DENVER, COLORADO</strong></p>
+                <p>"Exhibition Title"</p>
+                <p>November 11, 2016 to December 21, 2016</p>
+                    <br/>
+                    <br/>
+            <img src="images/solo4.jpg" alt="solo exhibitions">
+                <p><strong>INDIANAPOLIS, INDIANA</strong></p>
+                <p>"Exhibition Title"</p>
+                <p>October 7, 2016 to December 2, 2016</p>
+        </div>
+          
+    </body>
+</html>
+

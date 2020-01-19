@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Create Account</title>
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
+        <script src="js/scripts.js"></script>
+    </head>
+    <body>      
+        <header id ="master-header" role="banner">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a class="homelink" href="index.html">
+                        <h1>MyArt</h1>
+                    </a>
+                </div>
+                <div class="main-header">
+                    <ul id="primary-menu">
+                        <li id="home-menu">
+                            <a href="index.html">Home</a>
+                        </li>
+                         <li id="exhibitions-menu">
+                            <button onclick="showExhibitionsSubMenu()" class="exhibitionsdropbtn" a href="index.html">Exhibitions</button>
+                            <div id="exhibitionsDropDown" class="exhibitionssubmenu">
+                                    <a href="solo.html">Solo</a> <br/>
+                                    <a href="group.html">Group</a> <br/>
+                                    <a href="commissions.html">Commissions</a>
+                            </div>
+                        </li>
+                         <li id="about-menu">
+                             <button onclick="showAboutSubMenu()" class="aboutdropbtn" a href="about.html">About</button>
+                            <div id="aboutDropDown" class="aboutsubmenu">
+                                    <a href="about.html">Introduction</a> <br/>
+                                    <a href="author.html">Biography</a>
+                            </div>
+                        </li>
+                         <li id="createAccountMenu">
+                            <a href="account.html">Create Account</a>
+                        </li>
+                         <li id="shop-menu">
+                             <a href="shop.html" id="shopMenu">Shop</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+         <div id="itemwrapaccount">
+          <h1>Create Account</h1>
+        </div>
+          <hr>
+          <form id="createAccountForm" action="CreateAccount.php" method="post" onsubmit="return validateAccount()">
+              <fieldset>
+                <legend>Create Account</legend>
+                  <div class="createAccountContainer">
+                    <div id="firstNameContainer">
+                        <label><b>First Name</b></label>
+                        <input type="text" placeholder="First Name" name="firstName" id="firstName">
+                    </div>
+                    <div id="lastNameContainer">
+                        <label><b>Last Name</b></label>
+                        <input type="text" placeholder="Last Name" name="lastName" id="lastName">
+                    </div>
+                    <div id="emailContainer">
+                        <label><b>Email</b></label>
+                        <input type="text" placeholder="Email" name="email" id="email">
+                    </div>
+                    <div id="usernameContainer">
+                        <label><b>Username</b></label>
+                        <input type="text" placeholder="Username" name="username" id="username">
+                    </div>
+                    <div id="passwordContainer">
+                        <label><b>Password</b></label>
+                        <input type="text" placeholder="Password" name="password" id="password">
+                    </div>
+                    <div id="confirmPasswordContainer">
+                        <label><b>Confirm Password</b></label>
+                        <input type="text" placeholder="Confirm Password" name="confirmPassword" id="confirmPassword">
+                    </div>
+                    <p>By clicking "Create", you agree to the <a href="#">Terms & Conditions</a>.</p>
+                  <button type="submit" class="createbtn" id="createButton">Create</button>
+                  <button type="button"  class="cancelbtn" id="cancelButton" onClick="this.form.reset()">Cancel</button>
+                  
+                  </div>
+              </fieldset>
+          </form>
+    </body>
+</html>

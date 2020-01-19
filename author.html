@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Author</title>
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+    </head>
+    <body>
+        <header id ="master-header" role="banner">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a class="homelink" href="index.html">
+                        <h1>MyArt</h1>
+                    </a>
+                </div>
+                <div class="main-header">
+                    <ul id="primary-menu">
+                        <li id="home-menu">
+                            <a href="index.html">Home</a>
+                        </li>
+                         <li id="exhibitions-menu">
+                            <button onclick="showExhibitionsSubMenu()" class="exhibitionsdropbtn" a href="index.html">Exhibitions</button>
+                            <div id="exhibitionsDropDown" class="exhibitionssubmenu">
+                                    <a href="solo.html">Solo</a> <br/>
+                                    <a href="group.html">Group</a> <br/>
+                                    <a href="commissions.html">Commissions</a>
+                            </div>
+                        </li>
+                         <li id="about-menu">
+                             <button onclick="showAboutSubMenu()" class="aboutdropbtn" a href="about.html">About</button>
+                            <div id="aboutDropDown" class="aboutsubmenu">
+                                    <a href="about.html">Introduction</a> <br/>
+                                    <a href="author.html">Biography</a>
+                            </div>
+                        </li>
+                         <li id="createAccountMenu">
+                            <a href="account.html">Create Account</a>
+                        </li>
+                         <li id="shop-menu">
+                             <a href="shop.html" id="shopMenu">Shop</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div id="itemwrapauthor">
+            <h1>Biography</h1>
+        </div>
+        <h1 id="name">Jacob Parker</h1>
+         <p id="address">100 Main St., Denver, CO 80221</p>
+         <p id="address">jparker010@regis.edu</p>
+         <p id="address">303.555.5555</p>
+          <hr>
+        <h2 id="bio">Profile</h2>
+        <p> Jacob Parker is a graduate student at Regis University studying for a Master of Science Software Engineering.</p>
+        <h2 id="education">Education</h2>
+        <ul>
+            <li><strong>Regis University</strong><br/><em>2016-Present</em><br/>Master of Science Software Engineering</li>
+            <li><strong>Indiana University</strong><br/><em>2007-2011</em><br/>Bachelor of Arts<br/></li>  
+        </ul>
+        <h2 id="experience">Experience</h2>
+        <ul>
+            <li><strong>Denver Art Museum</strong><br/><em>2015-Present</em><br/>Analyst<br/></li>
+            <li><strong>Student</strong><br/><em>2016-Present</em><br/>MSSE Graduate Student<br/></li>   
+        </ul>
+        <h2 id="interests">Interests</h2>
+        <p>Having lived in Colorado for over 6 years, Jacob enjoys all the activities that Colorado has to offer. <br/>
+            Rock climbing, snow boarding, kayaking, and hiking are some of the outdoor activities that he enjoys.</p>
+        <h2 id="story">Contact the Author</h2>
+        <p><a href="www.linkedin.com">LinkedIn</a></p>
+
+        <h2 id="comment">Send Comments to the Author</h2>
+            <fieldset>
+                <legend>Submit a comment</legend>
+                <textarea id="commentId" name="commentName" rows="5" cols="60"></textarea>
+                <br/>
+                <button value="Submit" onclick="submitComment()">Submit</button>
+            </fieldset>
+        <br/><br/>
+        <table id="commentsTbl">
+            <tr>
+                <th class="row-datetime">Date Submitted</th> <th class="row-comment">Comment</th>
+            </tr>
+        </table>
+    <script src="js/scripts.js"></script>
+    </body>
+    
+</html>

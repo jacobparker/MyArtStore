@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Shop</title>
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
+        <script src="js/scripts.js"></script>
+    </head>
+    <body>      
+        <header id ="master-header" role="banner">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a class="homelink" href="index.html">
+                        <h1>MyArt</h1>
+                    </a>
+                </div>
+                <div class="main-header">
+                    <ul id="primary-menu">
+                        <li id="home-menu">
+                            <a href="index.html">Home</a>
+                        </li>
+                         <li id="exhibitions-menu">
+                            <button onclick="showExhibitionsSubMenu()" class="exhibitionsdropbtn" a href="index.html">Exhibitions</button>
+                            <div id="exhibitionsDropDown" class="exhibitionssubmenu">
+                                    <a href="solo.html">Solo</a> <br/>
+                                    <a href="group.html">Group</a> <br/>
+                                    <a href="commissions.html">Commissions</a>
+                            </div>
+                        </li>
+                         <li id="about-menu">
+                             <button onclick="showAboutSubMenu()" class="aboutdropbtn" a href="about.html">About</button>
+                            <div id="aboutDropDown" class="aboutsubmenu">
+                                    <a href="about.html">Introduction</a> <br/>
+                                    <a href="author.html">Biography</a>
+                            </div>
+                        </li>
+                         <li id="createAccountMenu">
+                            <a href="account.html">Create Account</a>
+                        </li>
+                         <li id="shop-menu">
+                             <a href="shop.html" id="shopMenu">Shop</a>
+                        </li>
+                   </ul>
+                </div>
+            </div>
+        </header>
+            <div id="itemwrapshop">
+         <h1>Shop</h1>
+         </div>
+        <form id="categotyForm">
+            <fieldset>
+                <legend>Category</legend>
+                <select onchange="location = this.value;">
+                    <option>Digital</option>
+                    <option value="shop.html">All</option>
+                    <option value="painting.html">Paintings</option>
+                    <option value="photography.html">Photography</option>
+                </select>   
+            </fieldset>
+                </form>
+            <div id="shopimagewrap">
+                <ul>
+                    <li>
+                        <img class="shopimage" src="images/solo3.jpg">
+                        <p>Indoor Rain</p>
+                    </li>
+                    <li>
+                        <img class="shopimage" src="images/solo4.jpg">
+                        <p>Shadow Beyond</p>
+                    </li>
+                    <li>
+                        <img class="shopimage" src="images/solo.jpg">
+                        <p>Lights Above</p>
+                    </li>
+                </ul>
+            </div>
+    </body>
+</html>
